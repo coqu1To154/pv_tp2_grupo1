@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 13</title>
+</head>
+<body>
+    <script>
+        //solicito cantidad de num que se almacenaran
+        let cantidad; 
+        do {
+            cantidad =parseInt(prompt("Ingrese la cantidad de numeros que se almacenaran en el array"));
+            if(cantidad<=0 || isNaN(cantidad)){
+                alert("La cantidad debe ser un numero mayor a 0");
+            }
+            else{
+                alert(`Cantidad de numeros a almacenar: ${cantidad}`);
+            }
+        } while(cantidad<=0 || isNaN(cantidad));
+        // creo el array
+        let array = []; // array vacio 
+        while (cantidad>0) {
+            let num = parseFloat(prompt("Ingrese un numero"));
+            if(isNaN(num)){
+                alert("Por favor ingrese un numero valido");
+            }
+            else{
+                array.push(num);
+                cantidad--;
+            }
+        }
+        // muestro el array 
+        const mostrarArreglo = (array) => {
+            console.log("Numeros almacenados en el array: ");
+            array.forEach (num => console.log(num));
+        }
+        // llamado a la funcion
+        mostrarArreglo(array);
+    </script>
+</body>
+</html>
