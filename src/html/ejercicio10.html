@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio10</title>
+</head>
+<body>
+    <script>
+        let numeros = [];
+        const Ingreso = (numeros) => {
+            //solicitamos el ingreso de la cantidad de numeros a ingresar
+            const cantidad = prompt ("Ingrese la cantidad de números a ingresar: ");
+            //inicializamos un array
+            
+            for ( let i = 0; i < cantidad ; i++ ) {
+                let aux = prompt (`Ingrese el ${i+1}° entero: `);
+                numeros.unshift(Number(aux));
+            }
+            //mostramos los datos del array
+            numeros.forEach((f) => {
+                alert(`Numeros ingresados: ${f}`);
+            });
+        }
+
+        const promedio = (numeros) =>{
+            let sumaTotal = numeros.reduce((acumulador,actual) => { 
+                return acumulador + actual;
+                }, 0);
+                alert(`El promedio es: ${sumaTotal/numeros.length}`);
+        }
+            
+        //mostramos los enteros ingresados
+        Ingreso(numeros);
+        //mostramos el promedio
+        promedio(numeros);
+
+    </script>
+</body>
+</html>
