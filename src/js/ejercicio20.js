@@ -4,3 +4,5 @@ import { servicioAlejandroFernandez } from "../services/ServiceAlejandroFernande
 import { servicioJonatanChaile } from "../services/ServiceJonatanChaile";
 
 import { servicioFrancoPonce} from "../services/serviceFrancoPonce"
+
+import { servicioLeandroBarea } from "../services/ServiceLeandroBarea";
