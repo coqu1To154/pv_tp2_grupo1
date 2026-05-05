@@ -1,0 +1,44 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.contenedor {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 400px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.pantalla-reflejo {
+    background: #e9ecef;
+    padding: 15px;
+    border-radius: 5px;
+    min-height: 50px;
+    word-wrap: break-word; 
+}
+
+#textoReflejado {
+    font-weight: bold;
+    color: #495057;
+}
