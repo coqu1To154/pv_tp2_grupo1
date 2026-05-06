@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/ejercicio20.css">
+    <title>Ejercicio20</title>
+</head>
+<body>
+    <main class="container">
+        <section>
+            <h1>Registro</h1>
+            <p class="subtitle">Complete los Datos</p>
+
+                <form id="form-carga">
+                    <!-- el for del label enlaza con el id del input-->
+                    <div class="form-group">    
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="Ingrese nombre ej: Ezequiel" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" placeholder="Ingrese apellido ej: Fernández" required>
+                    </div>
+                    
+                     <div class="form-group">
+                        <label for="libreta">Libreta Universitaria</label>
+                        <input type="number" id="libreta" min="99" max="9999" placeholder="Ej: 0912" required>
+                    </div>
+                    <button type="submit" id="btn-procesar">Registrar Estudiante</button>
+                </form>
+
+        </section>
+
+        <!-- Contenedor donde mostraremos los resultados-->
+         <section class="display-area" id="resultado" ></section>
+
+    </main>
+
+    <script type="module" src="../js/ejercicio20.js"></script>
+</body>
+</html>

@@ -1,8 +1,15 @@
-import { servicioFacundoMatorras } from "../services/serviceFacundoMatorras";
-import { servicioAlejandroFernandez } from "../services/ServiceAlejandroFernandez";
+import { servicioFacundoMatorras } from "../services/serviceFacundoMatorras.js";
 
-import { servicioJonatanChaile } from "../services/ServiceJonatanChaile";
+import { servicioAlejandroFernandez } from "../services/ServiceAlejandroFernandez.js";
 
-import { servicioFrancoPonce} from "../services/serviceFrancoPonce"
+import { servicioJonatanChaile } from "../services/ServiceJonatanChaile.js";
 
-import { servicioLeandroBarea } from "../services/ServiceLeandroBarea";
+import { servicioFrancoPonce} from "../services/serviceFrancoPonce.js"
+
+import { servicioLeandroBarea } from "../services/ServiceLeandroBarea.js";
+
+import { inicializarRegistro } from "../services/funciones20.js";
+
+document.addEventListener('DOMContentLoaded', () => {
+    inicializarRegistro();
+});
