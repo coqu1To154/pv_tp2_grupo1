@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Ejercicio 23</title>
-    <style>
-        body{
-            font-family:Arial, Helvetica, sans-serif;
-            padding: 20px;
-        }
-        #textoMostrado{
-            margin-top: 20px;
-            padding: 10px;
-            border: 1px solid black;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/ejercicio23.css">
 </head>
 <body>
-    <h2>Escribe algo:</h2>
-    <input type="text" id="entradaTexto">
-    <div id="textoMostrado"></div>
 
-    <script type="module" src="../js/ejercicio23.js"></script>
+<div class="contenedor">
+    <h2>Reflejo de Texto en Tiempo Real</h2>
+
+    <input type="text" id="entradaTexto" placeholder="Empezá a escribir aquí...">
+
+    <div id="textoMostrado">
+        <div class="resultado-titulo">Resultado:</div>
+        <div class="resultado-texto" id="textoResultado">
+            Esperando que escribas algo...
+        </div>
+    </div>
+</div>
+
+<script type="module" src="../js/ejercicio23.js"></script>
 </body>
 </html>
