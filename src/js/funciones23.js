@@ -1,6 +1,4 @@
-export const actualizarTexto = (input, salida)=>{
-    const texto = input.value;
-
+export const actualizarTexto = (texto, salida)=>{
     salida.textContent = texto;
 
     if(texto.length > 20){
@@ -8,5 +6,4 @@ export const actualizarTexto = (input, salida)=>{
     } else{
         salida.style.backgroundColor = "white";
     }
-
 };

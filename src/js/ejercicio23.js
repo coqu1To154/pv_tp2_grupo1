@@ -1,8 +1,8 @@
 import { actualizarTexto } from "./funciones23.js";
 
 const input = document.querySelector("#entradaTexto");
-const salida = document.querySelector("#textoMostrado");
+const salida = document.querySelector("#textoResultado");
 
 input.addEventListener("input", () =>{
-    actualizarTexto(input, salida);
+    actualizarTexto(input.value, salida);
 });
